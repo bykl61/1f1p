@@ -1,0 +1,139 @@
+<template>
+    <v-toolbar flat class="mainHeader">
+      <v-toolbar-title>Bir Fikir Bir Proje</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-toolbar-items class="hidden-sm-only">
+
+        <router-link to="/">
+          <v-btn depressed>Anasayfa</v-btn>
+        </router-link>
+
+        <router-link to="/hakkimizda">
+          <v-btn depressed>Hakkımızda</v-btn>
+        </router-link>
+
+        <router-link to="/sponsorlarimiz">
+          <v-btn depressed>Sponsorlarımız</v-btn>
+        </router-link>  
+        <v-menu offset-y>
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn
+              v-bind="attrs"
+              v-on="on"
+            >
+              Bir Fikir Bir Proje
+            </v-btn>
+          </template> 
+          <v-list class="list-class">
+            <v-list-item>
+              <v-btn text><router-link to="/oncekiprogramlarimiz/2023">2023</router-link></v-btn>
+            </v-list-item>
+            <v-list-item>
+              <v-btn text><router-link to="/oncekiprogramlarimiz/2020-2022">2020-2022</router-link></v-btn>
+            </v-list-item>
+            <v-list-item>
+              <v-btn text><router-link to="/oncekiprogramlarimiz/2019">2019</router-link></v-btn>
+            </v-list-item>
+            <v-list-item>
+              <v-btn text><router-link to="/oncekiprogramlarimiz/2018">2018</router-link></v-btn>
+            </v-list-item>
+            <v-list-item>
+              <v-btn text><router-link to="/oncekiprogramlarimiz/2017">2017</router-link></v-btn>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+          <v-btn href="https://forms.gle/CVLQcaoiN97P1PCz7" target="_blank" depressed>Başvuru</v-btn>
+        <router-link to="/iletisim">
+          <v-btn depressed>İletişim</v-btn>
+        </router-link>  
+      </v-toolbar-items>
+      <div class="hidden-md-and-up">
+        <v-menu offset-y>
+          <template v-slot:activator="{ on }">
+            <v-app-bar-nav-icon v-on="on"></v-app-bar-nav-icon>
+          </template>
+          <v-list class="responsiveMenu">
+            <v-list-item>
+              <v-list-item-title><router-link to="/">Anasayfa</router-link></v-list-item-title>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-title><router-link to="/hakkimizda">Hakkımızda</router-link></v-list-item-title>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-title><router-link to="/sponsorlarimiz">Sponsorlarımız</router-link></v-list-item-title>
+            </v-list-item>
+            <v-list-item>
+              <v-menu offset-y>
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn
+                    v-bind="attrs"
+                    v-on="on"
+                  >
+                    Bir Fikir Bir Proje
+                  </v-btn>
+                </template> 
+                <v-list class="list-class">
+                  <v-list-item>
+                    <v-btn text><router-link to="/oncekiprogramlarimiz/2023">2023</router-link></v-btn>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-btn text><router-link to="/oncekiprogramlarimiz/2020-2022">2020-2022</router-link></v-btn>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-btn text><router-link to="/oncekiprogramlarimiz/2019">2019</router-link></v-btn>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-btn text><router-link to="/oncekiprogramlarimiz/2018">2018</router-link></v-btn>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-btn text><router-link to="/oncekiprogramlarimiz/2017">2017</router-link></v-btn>
+                  </v-list-item>
+                </v-list>
+              </v-menu>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-title><router-link to="/basvuru">Başvuru</router-link></v-list-item-title>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-title><router-link to="/iletisim">İletişim</router-link></v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+      </div>
+    </v-toolbar>
+</template>
+
+<script>
+
+export default {
+    name: "Header",
+    data: () => ({}),
+};
+</script>
+
+<style>
+.v-list-item {
+  flex-direction: column;
+  align-items: stretch !important;
+}
+
+.v-toolbar__items .v-btn {
+  border-radius: 0 !important;
+  height: 100% !important;
+  max-height: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+} 
+
+.v-btn--is-elevated {
+  box-shadow: none !important;
+}
+
+.v-toolbar__items span {
+  color: #219fd9;
+  font-weight: bold;
+  font-size: large
+}
+
+
+</style>
