@@ -1,6 +1,6 @@
 <template>
   <div class="carouselPageBlock">
-    <v-carousel cycle>
+    <v-carousel hide-delimiters height="auto" cycle>
       <v-carousel-item
         v-for="(item,i) in items"
         :key="i"
@@ -17,7 +17,7 @@
           align="center"
           justify="center"
         >
-          <v-img :src="item.src" max-height="900px" contain eager/>
+          <v-img :src="item.src"  max-height="900px" contain eager/>
         </v-row>
       </v-sheet>  
         <v-row class="title fill-height hidden-xs-only" align="center" justify="center">{{ item.title }}</v-row>
@@ -35,7 +35,7 @@ export default {
         {
           src: require("../assets/images/twitter-kapak.jpg"),
           title: "Bir Fikir Bir Proje 2023",
-          to: "oncekiprogramlarimiz/2023"
+          to: "/birfikirbirproje/2023"
         }
       ]
     };

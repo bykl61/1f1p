@@ -1,6 +1,8 @@
 <template>
     <v-toolbar flat class="mainHeader" color="white">
-      <v-toolbar-title>Bir Fikir Bir Proje</v-toolbar-title>
+      <v-btn class="ozel">
+        <v-toolbar-title>Bir Fikir Bir Proje</v-toolbar-title>
+      </v-btn>
       <v-spacer></v-spacer>
     <hr/>
       <v-toolbar-items class="hidden-md-and-down">
@@ -43,7 +45,7 @@
             </v-list-item>
           </v-list>
         </v-menu>
-          <v-btn href="https://forms.gle/CVLQcaoiN97P1PCz7" target="_blank" depressed>Başvuru</v-btn>
+          <v-btn href="https://forms.gle/jsRzP92W4LqntXfW8" target="_blank" depressed>Başvuru</v-btn>
         <router-link to="/iletisim">
           <v-btn depressed>İletişim</v-btn>
         </router-link>  
@@ -65,7 +67,7 @@
             </v-list-item>
             <v-list-item>
               <v-menu offset-y open-on-hover tile>
-                <template v-slot:activator="{ on, attrs }">
+                <template @click="menu = false" v-slot:activator="{ on, attrs }">
                   <v-btn
                     v-bind="attrs"
                     v-on="on"
@@ -118,13 +120,17 @@ export default {
   align-items: stretch !important;
 }
 
-.v-toolbar__items .v-btn {
+.v-toolbar__items .v-btn , .ozel{
   border-radius: 0 !important;
   height: 100% !important;
   max-height: none !important;
   background-color: transparent !important;
   box-shadow: none !important;
 } 
+
+.v-btn:before {
+background-color: unset;
+}
 
 .v-btn--is-elevated {
   box-shadow: none !important;
