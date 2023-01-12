@@ -1,6 +1,6 @@
 <template>
     <v-content>
-      <div class="mt-5">        
+      <div>        
         <v-img :src="staticData.backgroundPhoto" max-height="800" contain/>
       </div>
       <div class="block" v-show="!(staticData.id === '2022')">
@@ -10,11 +10,8 @@
         </v-container>
         <v-container>
           <h3 class="text-center">Ödüller</h3>
-          <ul>
-            <li>Birincilik ödülü: 6000₺</li>
-            <li>İkincilik ödülü: 6000₺</li>
-            <li>Birincilik ödülü: 6000₺</li>
-            <li>Birincilik ödülü: 6000₺</li>
+          <ul v-for="(prize, i) in staticData.prize"  :key="prize" class="prizeCss">
+            <li>{{i + 1}}. En İyi Proje: {{prize}}</li>
           </ul>
         </v-container>
         <v-container>
@@ -86,10 +83,10 @@ import db from '../lib/db.js'
   },
 };
   </script>
-<!-- <style>
- ul {
+<style>
+.prizeCss {
   display: flex !important;
   align-items: center !important;
   flex-direction: column !important;
 } 
-</style> -->
+</style>

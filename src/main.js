@@ -23,7 +23,7 @@ const router = new VueRouter({
     { path: '/hakkimizda', component: About },
     { path: '/basvuru', component: Partners },
     { path: '/sponsorlarimiz', component: Partners },
-    { path: '/oncekiprogramlarimiz/2023', component: CurrentPrograms },
+    { path: '/birfikirbirproje/2023', component: CurrentPrograms },
     { path: '/oncekiprogramlarimiz/2020-2022', component: BeforePrograms },
     { path: '/oncekiprogramlarimiz/2019', component: BeforePrograms },
     { path: '/oncekiprogramlarimiz/2018', component: BeforePrograms },

@@ -1,14 +1,14 @@
 <template>
     <v-content>
-        <div class="mt-5">        
+        <div>        
             <v-img src="../assets/images/2023/1f1p-2023.jpeg" max-height="1000" cover/>
         </div>
         <div class="main">
             <h1>Program</h1>
             <ul>
-                <li>Başvuru süreci: 01 Aralık 2019 - 27 Mart 2020</li>
-                <li>Finale kalan takımların duyurulması: 17 Nisan 2020</li>
-                <li>Finale kalan takımların proje sunum ve görsellerinin web sitesine yüklenmesi için son tarih 14 Mayıs 2020</li>
+                <li>Başvuru süreci: 09 Ocak 2023 - 05 Mart 2023</li>
+                <li>Finale kalan takımların duyurulması: 26 Mart 2023</li>
+                <li>Finale kalan takımların proje sunum ve görsellerinin web sitesine yüklenmesi için son tarih 30 Nisan 2023</li>
                 <li>Final programı ve ödül töreni tarihi Tekder ve İstanbul Milli Eğitim Müdürlüğü tarafından daha sonra belirlenecektir.</li>
             </ul>
             <hr class="my-2" />
@@ -18,20 +18,30 @@
                 <li>Bir projede en fazla 3 öğrenci yer alabilir.</li>
                 <li>Her takımda bir danışman teknik öğretmen bulunabilir.</li>
                 <li>Başvurular www.birfikirbirproje.org web sitesinde ilan edilen online form doldurularak yapılır.</li>
-                <li>Daha önce başka bir yarışmada derece alıp ödüllendirilmiş bir proje bu yarışma kapsamında değerlendirmeye alınmaz.</li>
                 <li>Finale kalan her bir proje için A1 ya da A2 boyutunda olacak şekilde poster hazırlanır.</li>
                 <li>Finale kalan her bir projenin model ve/veya prototipi hazırlanmalıdır.</li>
                 <li>Katılımcılar, dereceye giren ya da "yayınlanmaya değer bulunan" projenin TEKDER tarafından kullanılmasına süresiz olarak kullanım hakkını verdiğini peşinen kabul ettiğini ve buna bağlı olarak gerek “Fikir ve Sanat Eserleri Kanunu, gerekse diğer ilgili mevzuat gereğince yarışmaya gönderdiği eserinin çoğaltma, işlenme, yayma, temsil, umuma iletim, faydalanma ve bunun gibi umuma arzla ilgili bilumum telif haklarını TEKDER’e verdiğini kabul eder.</li>
                 <li>Yayımlanan eserlere ayrıca telif ücreti ödenmez.</li>
             </ul>
             <hr class="my-2" />
-            <h1>Ödüller</h1>
-            <ul>
-                <li>Birincilik ödülü: 6000₺</li>
-                <li>İkincilik ödülü: 4000₺</li>
-                <li>Üçüncülük ödülü 2000₺</li>
-                <li>Finale kalan 10 takıma 1000₺</li>
-            </ul>
+            <div class="deneme">
+            <h1>Fikir Ödülleri</h1>
+                <ul>
+                    <!-- <h1>Fikir Ödülleri</h1> -->
+                    <li>Birincilik ödülü: 10000₺</li>
+                    <li>İkincilik ödülü: 8000₺</li>
+                    <li>Üçüncülük ödülü 6000₺</li>
+                </ul>
+            <hr class="my-2" />    
+            <h1>Uygulama Ödülleri</h1>
+                <ul>
+                    <!-- <h1>Uygulama Ödülleri</h1> -->
+                    <li>Birincilik ödülü: 10000₺</li>
+                    <li>İkincilik ödülü: 8000₺</li>
+                    <li>Üçüncülük ödülü 6000₺</li>
+                </ul> 
+            </div>
+
             <hr class="my-2" />
             <h1>İletişim</h1>
             <ul class="mb-10">

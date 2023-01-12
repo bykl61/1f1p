@@ -5,26 +5,6 @@
           flat
           tile
         >
-          <v-card-title class="teal">
-            <strong class="subheading">
-              Sosyal ağlarda bizimle bağlantı kurun!</strong>
-    
-            <v-spacer></v-spacer>
-    
-            <v-btn
-              v-for="icon in icons"
-              :key="icon.icon"
-              class="mx-4"
-              dark
-              icon
-              target="_blank"
-              :href="icon.src"
-            >
-              <v-icon size="24px">
-                {{ icon.icon }}
-              </v-icon>
-            </v-btn>
-          </v-card-title>
           <h1 class="mt-5">İletişim</h1>
           <ul>
               <li>Adres: Karagümrük Mahallesi TOKİ Konutları, muhtar Muhittin sokak, No: 14, C3-98 Blok, Daire: 3, Sulukule/Fatih/İstanbul</li>

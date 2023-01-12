@@ -1,8 +1,9 @@
 <template>
-    <v-toolbar flat class="mainHeader">
+    <v-toolbar flat class="mainHeader" color="white">
       <v-toolbar-title>Bir Fikir Bir Proje</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-only">
+    <hr/>
+      <v-toolbar-items class="hidden-md-and-down">
 
         <router-link to="/">
           <v-btn depressed>Anasayfa</v-btn>
@@ -26,7 +27,7 @@
           </template> 
           <v-list class="list-class">
             <v-list-item>
-              <v-btn text><router-link to="/oncekiprogramlarimiz/2023">2023</router-link></v-btn>
+              <v-btn text><router-link to="/birfikirbirproje/2023">2023</router-link></v-btn>
             </v-list-item>
             <v-list-item>
               <v-btn text><router-link to="/oncekiprogramlarimiz/2020-2022">2020-2022</router-link></v-btn>
@@ -47,8 +48,8 @@
           <v-btn depressed>İletişim</v-btn>
         </router-link>  
       </v-toolbar-items>
-      <div class="hidden-md-and-up">
-        <v-menu offset-y>
+      <div class="hidden-lg-and-up">
+        <v-menu offset-y v-model="menu">
           <template v-slot:activator="{ on }">
             <v-app-bar-nav-icon v-on="on"></v-app-bar-nav-icon>
           </template>
@@ -63,7 +64,7 @@
               <v-list-item-title><router-link to="/sponsorlarimiz">Sponsorlarımız</router-link></v-list-item-title>
             </v-list-item>
             <v-list-item>
-              <v-menu offset-y>
+              <v-menu offset-y open-on-hover tile>
                 <template v-slot:activator="{ on, attrs }">
                   <v-btn
                     v-bind="attrs"
@@ -72,20 +73,20 @@
                     Bir Fikir Bir Proje
                   </v-btn>
                 </template> 
-                <v-list class="list-class">
-                  <v-list-item>
-                    <v-btn text><router-link to="/oncekiprogramlarimiz/2023">2023</router-link></v-btn>
+                <v-list class="list-class" dense>
+                  <v-list-item  @click="menu =!menu">
+                    <v-btn text><router-link to="/birfikirbirproje/2023">2023</router-link></v-btn>
                   </v-list-item>
-                  <v-list-item>
+                  <v-list-item @click="menu =!menu">
                     <v-btn text><router-link to="/oncekiprogramlarimiz/2020-2022">2020-2022</router-link></v-btn>
                   </v-list-item>
-                  <v-list-item>
+                  <v-list-item @click="menu =!menu">
                     <v-btn text><router-link to="/oncekiprogramlarimiz/2019">2019</router-link></v-btn>
                   </v-list-item>
-                  <v-list-item>
+                  <v-list-item @click="menu =!menu">
                     <v-btn text><router-link to="/oncekiprogramlarimiz/2018">2018</router-link></v-btn>
                   </v-list-item>
-                  <v-list-item>
+                  <v-list-item @click="menu =!menu">
                     <v-btn text><router-link to="/oncekiprogramlarimiz/2017">2017</router-link></v-btn>
                   </v-list-item>
                 </v-list>
@@ -107,7 +108,7 @@
 
 export default {
     name: "Header",
-    data: () => ({}),
+    data: () => ({menu: false,}),
 };
 </script>
 

@@ -1,9 +1,9 @@
 <template>
   <v-main>
     <CarouselPage />
+    <Gallery :items="items" :title="title"/>
     <ProjectPartners/>
     <Partners/>
-    <Gallery :items="items" :title="title"/>
   </v-main>
 </template>
 

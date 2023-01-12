@@ -6,70 +6,8 @@
         "<br/> <br/>Dr. Kerim Çolak, mesleki eğitimin nitelik açısından iyileştirilmesi adına neler yapılabileceğini ortaya koymak adına, İstanbul’daki Mesleki ve Teknik Anadolu Liselerine yönelik ‘Bir Fikir, Bir Proje’ yarışmasını hayata geçirdiklerini ifade etti. Proje yarışmasının önemine değinen Çolak, mesleki ve teknik eğitime yönelik ülke olarak sorunların bulunduğuna işaret ederek amacın, bu sorunların çözümüne imkanlar ölçüsünde katkı sağlamak ve bu konuda bir bilinç oluşturmak olduğunu söyledi. Ayrıca mesleki ve teknik liselere daha ciddiyetle yaklaşılmasını bir nebze de olsun sağlamanın projenin en büyük getirilerinden biri olacağına değinen Dr. Kerim Çolak, nitelikli teknik personelin yetişmesi için bunun olmazsa olmaz olduğunu ifade etti."+
         "<br/> <br/>İstanbul İl Milli Eğitim Müdür Yardımcısı Serkan Gür’ün: ‘’TEKDER olarak bizden beklentiniz tam olarak nedir; başvuru sayılarını mı önemsiyorsunuz yoksa nitelikli proje başvurularının yapılmasını mı?’’ şeklindeki sorusuna karşılık Kerim Çolak, ‘’Tabi ki nitelikli proje başvurularının olması temel amacımızdır ama açıkçası başvuru sayılarını da oldukça önemsiyoruz. Özellikle proje yarışmasını daha kapsamlı yapabilmek için büyük firmaların dikkatini çekmemiz gerekiyor ve çoğunlukla da bunun sağlanabilmesi için projeye başvuru sayıları önem arz ediyor’’ ifadelerine yer verdi."+
         "<br/> <br/>İstanbul’daki tüm Mesleki ve Teknik Anadolu Liselerine yönelik olarak ve her sene düzenlenmesi planlanan proje yarışmasına 2017 yılında start verildi. Bugüne kadar yüzlerce okuldan 1000’e yakın proje başvurusunda bulunulan yarışma, İstanbul Bilişim ve Akıllı Kent Teknolojileri A.Ş. (İSBAK), MESAR Makine ve AKELSAN A.Ş. tarafından destekleniyor.",
-        items: [
-            {
-                id: 1,
-                src: require("../assets/images/2019/birinci-takim.jpg"),
-                proje: "1. EN İYİ PROJE: 'ŞARJLI KILIF'",
-                school: "ŞEHİT BÜYÜKELÇİ GALİP BALKAR MESLEKİ VE TEKNİK ANADOLU LİSESİ",
-                students: [ "Enes Salim Özdemir", "Ömer Faruk Yiğit", "Emircan Rüzgar"],
-                consultants: ["Ayfer Meral Çınar", "Gökhan Savan","Pelin Özbey"]
-            },
-            {
-                id: 2,
-                src: require("../assets/images/2019/second-team.jpg"),
-                proje: "2.	EN İYİ PROJE: 'BİLGİSAYAR OYUN PLATFORMU'",
-                school: "ATAŞEHİR ROTARY ÇOK PROGRAMLI ANADOLU LİSESİ ",
-                students: [ "Berkcan Cengiz", "Burak Eryılmaz", "Seyhan Kocasoy"],
-                consultants: ["Sakin Elçiçek"]
-            },
-            {
-                id: 3,
-                src: require("../assets/images/2019/second-team.jpg"),
-                proje: "3. EN İYİ PROJE: 'HAYAT KANALI'",
-                school: "ATAŞEHİR ROTARY ÇOK PROGRAMLI ANADOLU LİSESİ",
-                students: [ "İlayda Rabia Demirtaş", "Cihan Çelen", "Seyhan Kocasoy"],
-                consultants: ["Sakin Elçiçek"]
-            }
-        ],
-        otherPhotos: [
-            {
-                id: 1,
-                src: require("../assets/images/2019/other/img-1.jpg"),
-            },
-            {
-                id: 2,
-                src: require("../assets/images/2019/other/img-2.jpg"),
-            },
-            {
-                id: 3,
-                src: require("../assets/images/2019/other/img-3.jpg"),
-            },
-            {
-                id: 4,
-                src: require("../assets/images/2019/other/img-4.jpg"),
-            },
-            {
-                id: 5,
-                src: require("../assets/images/2019/other/img-5.jpg"),
-            },
-            {
-                id: 6,
-                src: require("../assets/images/2019/other/img-6.jpg"),
-            },
-            {
-                id: 7,
-                src: require("../assets/images/2019/other/img-7.jpg"),
-            },
-            {
-                id: 8,
-                src: require("../assets/images/2019/other/img-8.jpg"),
-            },
-            {
-                id: 9,
-                src: require("../assets/images/2019/other/img-9.jpg"),
-            }
-        ],
+        items: [],
+        otherPhotos: [],
     },
     {
         id:"2022",
@@ -146,72 +84,7 @@
                 src: require("../assets/images/2019/other/img-9.jpg"),
             }
         ],
-    },
-    {
-        id:"2019",
-        backgroundPhoto:require("../assets/images/2019/background.jpg"),
-        content: "falan filan inter milan",
-        items: [
-            {
-                id: 1,
-                src: require("../assets/images/2019/birinci-takim.jpg"),
-                school: "1. EN İYİ PROJE: 'ŞARJLI KILIF', ŞEHİT BÜYÜKELÇİ GALİP BALKAR MESLEKİ VE TEKNİK ANADOLU LİSESİ",
-                students: [ "Enes Salim Özdemir", "Ömer Faruk Yiğit", "Emircan Rüzgar"],
-                consultants: ["Ayfer Meral Çınar", "Gökhan Savan","Pelin Özbey"]
-            },
-            {
-                id: 2,
-                src: require("../assets/images/2019/second-team.jpg"),
-                school: "2.	EN İYİ PROJE: 'BİLGİSAYAR OYUN PLATFORMU', ATAŞEHİR ROTARY ÇOK PROGRAMLI ANADOLU LİSESİ ",
-                students: [ "Berkcan Cengiz", "Burak Eryılmaz", "Seyhan Kocasoy"],
-                consultants: ["Sakin Elçiçek"]
-            },
-            {
-                id: 3,
-                src: require("../assets/images/2019/second-team.jpg"),
-                school: "3. EN İYİ PROJE: 'HAYAT KANALI', ATAŞEHİR ROTARY ÇOK PROGRAMLI ANADOLU LİSESİ",
-                students: [ "İlayda Rabia Demirtaş", "Cihan Çelen", "Seyhan Kocasoy"],
-                consultants: ["Sakin Elçiçek"]
-            }
-        ],
-        otherPhotos: [
-            {
-                id: 1,
-                src: require("../assets/images/2019/other/img-1.jpg"),
-            },
-            {
-                id: 2,
-                src: require("../assets/images/2019/other/img-2.jpg"),
-            },
-            {
-                id: 3,
-                src: require("../assets/images/2019/other/img-3.jpg"),
-            },
-            {
-                id: 4,
-                src: require("../assets/images/2019/other/img-4.jpg"),
-            },
-            {
-                id: 5,
-                src: require("../assets/images/2019/other/img-5.jpg"),
-            },
-            {
-                id: 6,
-                src: require("../assets/images/2019/other/img-6.jpg"),
-            },
-            {
-                id: 7,
-                src: require("../assets/images/2019/other/img-7.jpg"),
-            },
-            {
-                id: 8,
-                src: require("../assets/images/2019/other/img-8.jpg"),
-            },
-            {
-                id: 9,
-                src: require("../assets/images/2019/other/img-9.jpg"),
-            }
-        ],
+        prize: ['6000₺','4000₺', '2000₺']
     },
     {
         id:"2018",
@@ -285,6 +158,7 @@
                 src: require("../assets/images/2018/other/img12.jpg"),
             }
         ],
+        prize: ['6000₺','4000₺', '2000₺']
     },
     {
         id:"2017",
@@ -365,6 +239,7 @@
                 src: require("../assets/images/2017/other/img-9.jpg"),
             }
         ],
+        prize: ['6000₺','4000₺', '2000₺']
     },
  ]
 
