@@ -49,8 +49,8 @@ export default {
     ],
     fikirIcons: [
       {icon:  "fab fa-facebook", src: 'https://www.facebook.com/people/Bir-Fikir-Bir-Proje/100088673027496/'},
-      {icon:  "fab fa-twitter", src: 'https://twitter.com/1Fikirve1Proje'},
-      {icon:  "fab fa-instagram", src: 'https://www.instagram.com/1fikir_1proje/'}    ]
+      {icon:  "fab fa-twitter", src: 'https://twitter.com/1Fikir1Projeorg'},
+      {icon:  "fab fa-instagram", src: 'https://www.instagram.com/1Fikir1Projeorg'}    ]
   })
 };
 </script>

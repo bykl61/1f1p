@@ -1,7 +1,7 @@
 <template>
     <v-toolbar flat class="mainHeader" color="white">
-      <v-btn class="ozel">
-        <v-toolbar-title>Bir Fikir Bir Proje</v-toolbar-title>
+      <v-btn href="/" class="ozel">
+        <v-toolbar-title>BİR FİKİR BİR PROJE</v-toolbar-title>
       </v-btn>
       <v-spacer></v-spacer>
     <hr/>
@@ -24,7 +24,7 @@
               v-bind="attrs"
               v-on="on"
             >
-              Bir Fikir Bir Proje
+              BİR FİKİR BİR PROJE
             </v-btn>
           </template> 
           <v-list class="list-class">
@@ -45,9 +45,9 @@
             </v-list-item>
           </v-list>
         </v-menu>
-          <v-btn href="https://forms.gle/jsRzP92W4LqntXfW8" target="_blank" depressed>Başvuru</v-btn>
+          <v-btn href="https://docs.google.com/forms/d/e/1FAIpQLSeka__FUWECLsRS7QzrgcbF6m1aRRk9Tln3kp6NzGpWecoLBw/viewform?usp=sf_link" target="_blank" depressed>Başvuru</v-btn>
         <router-link to="/iletisim">
-          <v-btn depressed>İletişim</v-btn>
+          <v-btn depressed>İLETİŞİM</v-btn>
         </router-link>  
       </v-toolbar-items>
       <div class="hidden-lg-and-up">
@@ -66,13 +66,14 @@
               <v-list-item-title><router-link to="/sponsorlarimiz">Sponsorlarımız</router-link></v-list-item-title>
             </v-list-item>
             <v-list-item>
-              <v-menu offset-y open-on-hover tile>
+              <v-menu offset-y tile>
                 <template @click="menu = false" v-slot:activator="{ on, attrs }">
                   <v-btn
                     v-bind="attrs"
                     v-on="on"
+                    depressed
                   >
-                    Bir Fikir Bir Proje
+                  BİR FİKİR BİR PROJE
                   </v-btn>
                 </template> 
                 <v-list class="list-class" dense>
@@ -95,10 +96,12 @@
               </v-menu>
             </v-list-item>
             <v-list-item>
-              <v-list-item-title><router-link to="/basvuru">Başvuru</router-link></v-list-item-title>
+              <v-list-item-title depressed>
+                <v-btn href="https://docs.google.com/forms/d/e/1FAIpQLSeka__FUWECLsRS7QzrgcbF6m1aRRk9Tln3kp6NzGpWecoLBw/viewform?usp=sf_link" target="_blank" depressed>Başvuru</v-btn>
+              </v-list-item-title>
             </v-list-item>
             <v-list-item>
-              <v-list-item-title><router-link to="/iletisim">İletişim</router-link></v-list-item-title>
+              <v-list-item-title><router-link to="/iletisim">İLETİŞİM</router-link></v-list-item-title>
             </v-list-item>
           </v-list>
         </v-menu>
@@ -142,5 +145,9 @@ background-color: unset;
   font-size: large
 }
 
+
+.theme--light.v-btn.v-btn--has-bg {
+  background-color: #f5f5f500;
+}
 
 </style>

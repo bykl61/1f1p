@@ -27,18 +27,16 @@
             <div class="deneme">
             <h1>Fikir Ödülleri</h1>
                 <ul>
-                    <!-- <h1>Fikir Ödülleri</h1> -->
-                    <li>Birincilik ödülü: 10000₺</li>
-                    <li>İkincilik ödülü: 8000₺</li>
-                    <li>Üçüncülük ödülü 6000₺</li>
+                    <li>1.Proje: 5000₺</li>
+                    <li>2.Proje: 4000₺</li>
+                    <li>3.Proje: 3000₺</li>
                 </ul>
             <hr class="my-2" />    
             <h1>Uygulama Ödülleri</h1>
                 <ul>
-                    <!-- <h1>Uygulama Ödülleri</h1> -->
-                    <li>Birincilik ödülü: 10000₺</li>
-                    <li>İkincilik ödülü: 8000₺</li>
-                    <li>Üçüncülük ödülü 6000₺</li>
+                    <li>1.Proje: 10000₺</li>
+                    <li>2.Proje: 8000₺</li>
+                    <li>3.Proje  6000₺</li>
                 </ul> 
             </div>
 
